@@ -1,0 +1,11 @@
+.AppContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #1e152a;
+}
+
+.AppTitle {
+  color: white;
+}
