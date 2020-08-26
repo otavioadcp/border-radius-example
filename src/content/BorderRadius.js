@@ -1,8 +1,33 @@
 import React from "react";
 import "./BorderRadius.css";
 import styled from "styled-components";
+
 const StyledInput = styled.input`
-  height: 2rem;
+  margin-top: 10px;
+  height: 0.6rem;
+  -webkit-appearance: none;
+
+  slider-runnable-track {
+    width: 100%;
+    height: 12.8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: green;
+    border-radius: 25px;
+    border: 0px solid #000101;
+  }
+
+  slider-thumb {
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 39px;
+    border-radius: 7px;
+    background: #65001c;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.6px;
+  }
 `;
 
 const CustomBorderContainer = styled.div`
@@ -11,11 +36,11 @@ const CustomBorderContainer = styled.div`
   width: 50vw;
   height: 60vh;
   background-color: #f6f6f6;
-  justify-content: center;
-  border-top-left-radius: ${(props) => `${props.values.slider1}px`};
-  border-top-right-radius: ${(props) => `${props.values.slider2}px`};
-  border-bottom-left-radius: ${(props) => `${props.values.slider3}px`};
-  border-bottom-right-radius: ${(props) => `${props.values.slider4}px`};
+  margin: auto auto;
+  border-top-left-radius: ${(props) => `${props.values.slider1}%`};
+  border-top-right-radius: ${(props) => `${props.values.slider2}%`};
+  border-bottom-left-radius: ${(props) => `${props.values.slider3}%`};
+  border-bottom-right-radius: ${(props) => `${props.values.slider4}%`};
 `;
 
 export default function BorderRadius() {
@@ -56,8 +81,8 @@ export default function BorderRadius() {
           </div>
 
           <div className="Result">
-            <span>
-              {`border-radius:${slider1}px    ${slider2}px    ${slider3}px    ${slider4}px`}{" "}
+            <span className="resultText">
+              {`border-radius:${slider1}%    ${slider2}%    ${slider3}%    ${slider4}%`}{" "}
             </span>
           </div>
           <div className="InputArea3">

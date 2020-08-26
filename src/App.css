@@ -1,11 +1,26 @@
 .AppContainer {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #1e152a;
+  background-color: #8774a0;
+  text-align: center;
 }
 
-.AppTitle {
+.titleContainer {
+  width: 100%;
+  margin-top: 2rem;
+  height: 10rem;
+}
+
+.Title {
   color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 1px;
 }
